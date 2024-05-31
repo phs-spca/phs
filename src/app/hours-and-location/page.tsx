@@ -38,7 +38,7 @@ export default function HoursLocationPage() {
           </div>
           <div className="flex flex-row gap-[5.69rem]">
             <img
-              src="https://qkkuacqtcsfjbnzmxmhk.supabase.co/storage/v1/object/public/images/HOURS_AND_LOCATION.png?t=2024-05-05T03%3A55%3A28.082Z"
+              src="https://qkkuacqtcsfjbnzmxmhk.supabase.co/storage/v1/object/public/images/Hours_Location3.JPG?t=2024-05-05T03%3A55%3A28.082Z"
               alt="Hours & Location"
               className="object-cover w-[30.375rem] h-[25.6875rem] rounded-xl"
             />
