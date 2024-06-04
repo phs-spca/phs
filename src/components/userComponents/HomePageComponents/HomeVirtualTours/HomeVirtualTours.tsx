@@ -91,7 +91,7 @@ function HomeVirtualTours(): React.JSX.Element {
             text-asparagus hover:text-hunter-green focus:text-hunter-green"
             href="/virtual-tours"
           >
-            See all virtual tours
+            See all Virtual Tours
             <HiChevronRight className="text-2xl" />
           </Link>
         )}
