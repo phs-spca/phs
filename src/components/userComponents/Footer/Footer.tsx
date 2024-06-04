@@ -276,13 +276,13 @@ function Input({
               <p className="text-silver s2"> CONTACT US </p>
               <p className="leading-tight">
                 {' '}
-                5333 Zoo Drive <br /> Los Angeles, CA 90027{' '}
+                24103 Congress Springs Road <br /> Saratoga, CA 95070{' '}
               </p>
-              <p> (323) 644-4200 </p>
+              <p> (650) 340-7022 </p>
               <p className="leading-tight">
                 {' '}
-                Open today from: <br />
-                9:30 AM – 5:00 PM{' '}
+                Open seven days a week: <br />
+                9:00 AM – 6:00 PM{' '}
               </p>
               <div className="justify-start items-start gap-2.5 inline-flex">
                 <Link href="https://www.facebook.com/PHSSPCA/" target="_blank">
