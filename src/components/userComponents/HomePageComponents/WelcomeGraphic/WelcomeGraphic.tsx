@@ -23,7 +23,7 @@ function WelcomeGraphic() {
         <h1 className="text-center w-80">Wildlife Care Center</h1>
         {isWebDevice && (
           <p className="b3 font-light mt-7 w-96 text-center">
-            Peninsula Humane Society & SPCA (PHS & SPCA) is a local, private,
+            Peninsula Humane Society & SPCA (PHS/SPCA) is a local, private,
             non-profit charitable organization dedicated to animal welfare.
           </p>
         )}
