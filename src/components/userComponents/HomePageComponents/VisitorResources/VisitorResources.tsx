@@ -22,7 +22,7 @@ function VisitorResources() {
         "
         style={{
           backgroundImage:
-            "url('https://qkkuacqtcsfjbnzmxmhk.supabase.co/storage/v1/object/public/images/BirdBackground')",
+            "url('https://qkkuacqtcsfjbnzmxmhk.supabase.co/storage/v1/object/public/images/Hours_Location3.JPG?')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
