@@ -95,7 +95,7 @@ function HomeWildlifeSpotlights(): React.JSX.Element {
             text-asparagus hover:text-hunter-green focus:text-hunter-green"
             href="/wildlife-spotlights"
           >
-            See all wildlife spotlights
+            See all Wildlife Spotlights
             <HiChevronRight className="text-2xl" />
           </Link>
         )}
