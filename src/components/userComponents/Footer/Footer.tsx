@@ -230,7 +230,7 @@ function Input({
                 />
               </Link>
               <p className="text-sm font-normal">
-                The Peninsula Humane Society & SPCA (PHS & SPCA) is a local,
+                The Peninsula Humane Society & SPCA (PHS/SPCA) is a local,
                 private, non-profit charitable organization dedicated to animal
                 welfare.{' '}
               </p>
