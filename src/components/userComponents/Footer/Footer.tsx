@@ -278,7 +278,7 @@ function Input({
                 {' '}
                 24103 Congress Springs Road <br /> Saratoga, CA 95070{' '}
               </p>
-              <p> (650) 340-7022 </p>
+              <p> 650-340-7022 </p>
               <p className="leading-tight">
                 {' '}
                 Open seven days a week: <br />
