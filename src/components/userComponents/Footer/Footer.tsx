@@ -368,7 +368,7 @@ export default function Footer() {
   // const { error } = await supabase.from('emails').insert({ id: 1, name: 'Denmark' })
 
   const isValidEmail = (email: string) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.(com|ca)$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
 
