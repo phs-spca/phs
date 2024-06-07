@@ -131,7 +131,7 @@ export default function HoursLocationPage() {
           </div>
           <div className="flex flex-row gap-[0.62rem] items-center">
             <p className="b3 text-night">South Bay Intake</p>
-            <p className="s1 text-shadow">408-929-9453</p>
+            <p className="s1 text-shadow">650-340-7022</p>
           </div>
         </div>
         <p className="b3 text-night pl-[1.31rem]">
