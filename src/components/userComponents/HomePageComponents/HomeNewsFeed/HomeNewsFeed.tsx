@@ -33,7 +33,7 @@ function HomeNewsFeed() {
       {isWebDevice && (
         <img
           className="object-cover object-center w-96 h-80 rounded-l"
-          src="https://qkkuacqtcsfjbnzmxmhk.supabase.co/storage/v1/object/public/images/HomePage_Raccoons.png"
+          src="https://qkkuacqtcsfjbnzmxmhk.supabase.co/storage/v1/object/public/images/Latest_News?"
           alt="background for spotlight"
         />
       )}
