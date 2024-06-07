@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { HiChevronRight } from 'react-icons/hi';
 import Link from 'next/link';
 import { NewsRow } from '../../../../types/types';
-import NewsDisplay from '../../NewsDisplay/NewsDisplay';
+import NewsDisplay from '../../NewsDisplay/NewsDisplay_Alternate';
 import { fetchAllNewsByDate } from '../../../../supabase/news/queries';
 import { useWebDeviceDetection } from '../../../../context/WindowWidthContext/WindowWidthContext';
 
