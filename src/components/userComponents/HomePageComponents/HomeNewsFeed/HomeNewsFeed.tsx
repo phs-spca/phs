@@ -33,8 +33,9 @@ function HomeNewsFeed() {
       {isWebDevice && (
         <iframe title="Instagram Feed" id="instagram-embed-0" 
           src="https://www.instagram.com/phsspcawildlife/embed/?cr=1&amp;v=14&amp;wp=540&amp;rd=file%3A%2F%2F&amp;rp=%2FC%3A%2FUsers%2Fedidato%2FDownloads%2Ftesting_embed%2520-%2520Copy.html#%7B%22ci%22%3A0%2C%22os%22%3A762.3999999994412%2C%22ls%22%3A60.39999999944121%2C%22le%22%3A758.3999999994412%7D" 
-          allowfullscreen="true" height="583" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white; max-width: 540px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; 
-          padding: 0px;"></iframe>
+          allowfullscreen="true" height="583" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" 
+          style="background: white; max-width: 540px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;">
+        </iframe>
       )}
     </div>
   );
