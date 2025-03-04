@@ -41,7 +41,7 @@ function HomeNewsFeed() {
     display: 'block',
     margin: '0px 0px 12px',
     minWidth: '326px',
-    padding: '0px'}}></iframe>
+    padding: '0px'}}/>
       )}
     </div>
   );
