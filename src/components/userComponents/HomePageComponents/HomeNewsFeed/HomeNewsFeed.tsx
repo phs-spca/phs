@@ -31,36 +31,11 @@ function HomeNewsFeed() {
      justify-center items-center"
     >
       {isWebDevice && (
-        <img
-          className="object-cover object-center w-96 h-80 rounded-l"
-          src="https://qkkuacqtcsfjbnzmxmhk.supabase.co/storage/v1/object/public/images/Latest_News?"
-          alt="background for spotlight"
-        />
+        <iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" 
+          src="https://www.instagram.com/phsspcawildlife/embed/?cr=1&amp;v=14&amp;wp=540&amp;rd=file%3A%2F%2F&amp;rp=%2FC%3A%2FUsers%2Fedidato%2FDownloads%2Ftesting_embed%2520-%2520Copy.html#%7B%22ci%22%3A0%2C%22os%22%3A762.3999999994412%2C%22ls%22%3A60.39999999944121%2C%22le%22%3A758.3999999994412%7D" 
+          allowtransparency="true" allowfullscreen="true" frameborder="0" height="583" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white; max-width: 540px; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; 
+          display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe>
       )}
-      <div className="w-full">
-        <div className="w-full web:w-96 h-5 justify-between items-center flex">
-          <h2 className="text-night font-medium">Latest News</h2>
-          <Link
-            className="b1 inline-flex items-center
-            text-asparagus hover:text-hunter-green focus:text-hunter-green"
-            href="/news"
-          >
-            See All
-            <HiChevronRight className="text-2xl" />
-          </Link>
-        </div>
-        <ul>
-          {news.map(article => (
-            <NewsDisplay
-              key={article.updated_at}
-              id={article.id}
-              contentLink={article.content_link}
-              createdAt={article.created_at}
-              title={article.title}
-            />
-          ))}
-        </ul>
-      </div>
     </div>
   );
 }
