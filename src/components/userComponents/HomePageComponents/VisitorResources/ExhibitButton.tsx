@@ -12,7 +12,7 @@ import { FiMap } from 'react-icons/fi';
 function ExhibitButton() {
   return (
     <Link
-      href="/exhibitPage"
+      href="/exhibits"
       className="ExhibitButton rounded-lg justify-start items-center gap-4 inline-flex
       bg-ivory group hover:bg-mint-cream focus:bg-mint-cream 
       w-full h-full web:h-48
