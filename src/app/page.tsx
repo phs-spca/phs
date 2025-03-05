@@ -39,15 +39,6 @@ function Home() {
             care of sick, injured, and orphaned native wildlife.
           </p>
         )}
-        <div
-          className="web:w-auto h-48 rounded-lg bg-mint-cream web:bg-ivory justify-center 
-        items-center mt-10 web:mt-0 m-2 inline-flex px-10 py-11 web:px-[4.59rem] py-[2.875rem]"
-        >
-          <h3 className="max-w-64 web:w-96 text-scary-forest text-center font-normal italic">
-            Peninsula Humane Society & SPCA guided by the humane ethics, builds
-            healthy relationships between people and animals.
-          </h3>
-        </div>
       </div>
       <HomeWildlifeSpotlights />
       <VisitorResources />
