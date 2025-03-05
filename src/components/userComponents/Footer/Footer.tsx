@@ -171,27 +171,15 @@ function Input({
                   {' '}
                   <p> Hours & Locations </p>{' '}
                 </Link>
-                <Link href="/site-maps">
-                  {' '}
-                  <p> Site Maps </p>{' '}
-                </Link>
-                <Link href="/virtual-tours">
-                  {' '}
-                  <p> Virtual Tours </p>{' '}
-                </Link>
               </div>
               <div className="flex flex-col gap-4">
-                <Link href="/exhibits">
-                  {' '}
-                  <p> Exhibits </p>{' '}
-                </Link>
-                <Link href="/news">
-                  {' '}
-                  <p> News </p>{' '}
-                </Link>
                 <Link href="/wildlife-spotlights">
                   {' '}
                   <p> Wildlife Spotlights </p>{' '}
+                </Link>
+               <Link href="/virtual-tours">
+                  {' '}
+                  <p> Virtual Tours </p>{' '}
                 </Link>
               </div>
             </div>
@@ -248,28 +236,16 @@ function Input({
                 {' '}
                 <p> Hours & Location </p>
               </Link>
-              <Link href="/site-maps">
+            </div>
+            <div className="w-[150px] flex flex-col gap-4 text-ivory active:text-[#bcc0bb]">
+              <p className="text-silver s2"> LEARN & EXPLORE </p>
+              <Link href="/wildlife-spotlights">
                 {' '}
-                <p> Site Maps </p>
+                <p>Wildlife Spotlights</p>{' '}
               </Link>
               <Link href="/virtual-tours">
                 {' '}
                 <p> Virtual Tours</p>{' '}
-              </Link>
-            </div>
-            <div className="w-[150px] flex flex-col gap-4 text-ivory active:text-[#bcc0bb]">
-              <p className="text-silver s2"> LEARN & EXPLORE </p>
-              <Link href="/exhibits">
-                {' '}
-                <p> Exhibits </p>
-              </Link>
-              <Link href="/news">
-                {' '}
-                <p> News </p>{' '}
-              </Link>
-              <Link href="/wildlife-spotlights">
-                {' '}
-                <p>Wildlife Spotlights</p>{' '}
               </Link>
             </div>
             <div className="flex flex-col gap-4 s1 mr-56">
