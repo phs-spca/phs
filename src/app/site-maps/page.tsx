@@ -74,13 +74,13 @@ function MapPage() {
           <div className="pt-20 pb-6 pl-2 ">
             <text className="text-scary-forest font-lato text-sm font-normal">
               Home{' '}
-              <text className="text-night"> / Wildlife Care Center Maps </text>
+              <text className="text-night"> / Site Maps</text>
             </text>
           </div>
           <div className="flex items-center  pb-4">
             <div className="flex-initial pr-2 pl-2">
               <p className="text-night font-lato font-normal text-3xl">
-                Wildlife Care Center Maps
+                Site Maps
               </p>
             </div>
             <div className="flex-grow flex justify-end pr-2 pl-2 pb-3">
