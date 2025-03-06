@@ -43,7 +43,7 @@ function HomeWildlifeSpotlights(): React.JSX.Element {
   return (
     <div className="pl-4 web:px-48 py-20 web:py-25 bg-ivory ">
       <div className=" h-5 w-full web:px-51 justify-between items-center inline-flex ">
-        <h3 className="text-night">Our Wildlife Spotlights</h3>
+        <h3 className="text-night">Wildlife Spotlights</h3>
         {!isWebDevice && (
           <Link
             className="b1 inline-flex items-center
