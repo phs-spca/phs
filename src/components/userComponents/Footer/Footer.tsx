@@ -173,6 +173,10 @@ function Input({
                 </Link>
               </div>
               <div className="flex flex-col gap-4">
+                  <Link href="/exhibits">
+                  {' '}
+                  <p> Exhibits </p>{' '}
+                </Link>
                 <Link href="/wildlife-spotlights">
                   {' '}
                   <p> Wildlife Spotlights </p>{' '}
@@ -239,6 +243,10 @@ function Input({
             </div>
             <div className="w-[150px] flex flex-col gap-4 text-ivory active:text-[#bcc0bb]">
               <p className="text-silver s2"> LEARN & EXPLORE </p>
+              <Link href="/exhibits">
+                {' '}
+                <p> Exhibits </p>
+              </Link>
               <Link href="/wildlife-spotlights">
                 {' '}
                 <p>Wildlife Spotlights</p>{' '}
