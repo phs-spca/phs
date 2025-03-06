@@ -54,7 +54,7 @@ function App() {
             <BackButton />
             <div className="flex-col justify-start items-start mt-2">
               <h1 className="text-night leading-9 font-['Lato'] mb-4">
-                Our Exhibits{' '}
+                Exhibits{' '}
               </h1>
               <p className="text-night leading-5 font-normal font-['Lato']">
                 The Bay Area is home to a wide variety of plant and animal life.
@@ -98,11 +98,11 @@ function App() {
                 {' '}
                 Home{' '}
               </Link>{' '}
-              / Our Exhibits{' '}
+              / Exhibits{' '}
             </p>
             <div className="flex-col justify-start items-start mt-6">
               <h1 className="text-night leading-9 font-['Lato'] mb-4">
-                Our Exhibits{' '}
+                Exhibits{' '}
               </h1>
               <p className="text-night leading-5 font-normal font-['Lato']">
                 The Bay Area is home to a wide variety of plant and animal life.
