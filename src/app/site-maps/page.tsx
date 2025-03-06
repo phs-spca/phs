@@ -97,6 +97,13 @@ function MapPage() {
   ) : (
     <>
       <NavBar />
+         <div className="pt-6.25 pr-2 pl-2 pb-2 bg-ivory">
+        <div className="p-4">
+          <p className="text-night font-lato text-2xl font-normal">
+            Wildlife Care Center Maps
+          </p>
+        </div>
+
         {renderFilterContainer()}
         <div className="pt-0 pl-2 pr-2 bg-ivory">
           <div className="w-full pr-2 pl-2 flex h-2/3 mb-8">
