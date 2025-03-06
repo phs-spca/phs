@@ -97,7 +97,6 @@ function MapPage() {
   ) : (
     <>
       <NavBar />
-
         {renderFilterContainer()}
         <div className="pt-0 pl-2 pr-2 bg-ivory">
           <div className="w-full pr-2 pl-2 flex h-2/3 mb-8">
