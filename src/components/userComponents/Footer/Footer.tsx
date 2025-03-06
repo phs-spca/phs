@@ -169,14 +169,14 @@ function Input({
               <div className="flex flex-col gap-4">
                 <Link href="/hours-and-location">
                   {' '}
-                  <p> Hours & Locations </p>{' '}
+                  <p> Hours & Location </p>{' '}
                 </Link>
-              </div>
-              <div className="flex flex-col gap-4">
-                  <Link href="/exhibits">
+                <Link href="/exhibits">
                   {' '}
                   <p> Exhibits </p>{' '}
                 </Link>
+              </div>
+              <div className="flex flex-col gap-4">
                 <Link href="/wildlife-spotlights">
                   {' '}
                   <p> Wildlife Spotlights </p>{' '}
@@ -195,7 +195,7 @@ function Input({
                   </div>
                 </div>
                 <div className="mt-4 text-zinc-500 text-center text-xs font-normal font-['Lato']">
-                  Copyright © 2024 Peninsula Humane Society & SPCA{' '}
+                  Copyright © 2025 Peninsula Humane Society & SPCA{' '}
                 </div>
               </Link>
               <Link
@@ -240,13 +240,13 @@ function Input({
                 {' '}
                 <p> Hours & Location </p>
               </Link>
-            </div>
-            <div className="w-[150px] flex flex-col gap-4 text-ivory active:text-[#bcc0bb]">
-              <p className="text-silver s2"> LEARN & EXPLORE </p>
               <Link href="/exhibits">
                 {' '}
                 <p> Exhibits </p>
               </Link>
+            </div>
+            <div className="w-[150px] flex flex-col gap-4 text-ivory active:text-[#bcc0bb]">
+              <p className="text-silver s2"> LEARN & EXPLORE </p>
               <Link href="/wildlife-spotlights">
                 {' '}
                 <p>Wildlife Spotlights</p>{' '}
@@ -301,7 +301,7 @@ function Input({
           </div>
           <div className="flex mt-12">
             <p className="text-silver ml-56 text-base font-normal font-['Lato']">
-              Copyright © 2024 Peninsula Humane Society & SPCA{' '}
+              Copyright © 2025 Peninsula Humane Society & SPCA{' '}
             </p>
             <Link
               href="https://phs-spca.org/privacy-policy/"
