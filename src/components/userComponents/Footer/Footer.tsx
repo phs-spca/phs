@@ -167,13 +167,17 @@ function Input({
             <hr className="border-silver w-[322px] m-auto h-[.5px] mt-5 mb-8" />
             <div className="bg-scary-forest flex justify-around text-center text-ivory font-[Lato] gap-4 active:text-[#bcc0bb]">
               <div className="flex flex-col gap-4">
-                <Link href="/hours-and-location">
-                  {' '}
-                  <p> Hours & Location </p>{' '}
-                </Link>
                 <Link href="/exhibits">
                   {' '}
                   <p> Exhibits </p>{' '}
+                </Link>
+                <Link href="/site-maps">
+                  {' '}
+                  <p> Site Maps </p>{' '}
+                </Link>
+                <Link href="/hours-and-location">
+                  {' '}
+                  <p> Hours & Location </p>{' '}
                 </Link>
               </div>
               <div className="flex flex-col gap-4">
@@ -236,13 +240,18 @@ function Input({
             </div>
             <div className="w-[9.375rem] flex flex-col gap-4 text-ivory active:text-[#bcc0bb]">
               <p className="text-silver s2"> VISIT </p>
+             <Link href="/exhibits">
+                {' '}
+                <p> Exhibits </p>
+              <Link href="/site-maps">
+                {' '}
+                <p> Site Maps </p>
+              </Link>
+              <Link href="/virtual-tours">
+              </Link>
               <Link href="/hours-and-location">
                 {' '}
                 <p> Hours & Location </p>
-              </Link>
-              <Link href="/exhibits">
-                {' '}
-                <p> Exhibits </p>
               </Link>
             </div>
             <div className="w-[150px] flex flex-col gap-4 text-ivory active:text-[#bcc0bb]">
