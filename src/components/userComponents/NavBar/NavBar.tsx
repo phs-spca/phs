@@ -48,10 +48,11 @@ export default function NavBar() {
           />
         </Link>
         <p className="b1 text-ivory flex flex-row gap-[3.19rem]">
-          <Link href="/hours-and-location">Hours & Location</Link>
-          <Link href="/exhibits">Exhibits</Link>
           <Link href="/wildlife-spotlights">Wildlife Spotlights</Link>
+          <Link href="/exhibits">Exhibits</Link>
+          <Link href="/site-maps">Site Maps</Link>
           <Link href="/virtual-tours">Virtual Tours</Link>
+          <Link href="/hours-and-location">Hours & Location</Link>
         </p>
       </div>
       <div className="bg-hunter-green w-full h-[0.375rem]" />
@@ -99,8 +100,9 @@ export default function NavBar() {
             <div className="flex flex-col gap-5">
               <p className="s1 text-scary-forest uppercase">VISIT</p>
               <h4 className="text-night flex flex-col gap-[1.38rem] pl-5">
-                <Link href="/hours-and-location">Hours & Location</Link>
                 <Link href="/exhibits">Exhibits</Link>
+                <Link href="/site-maps">Site Maps</Link>
+                <Link href="/hours-and-location">Hours & Location</Link>
               </h4>
             </div>
             <div>
