@@ -17,8 +17,8 @@ import TourPreviewCard from './TourPreviewCard';
 import { useWebDeviceDetection } from '../../../context/WindowWidthContext/WindowWidthContext';
 
 const center: LatLngExpression = {
-  lat: 37.251642,
-  lng: -122.08486,
+  lat: 37.252298,
+  lng: -122.084762,
 };
 
 const tileLayer: { attribution: string; url: string } = {
@@ -148,7 +148,7 @@ function SiteMap({ mode }: SiteMapProps) {
   return (
     <MapContainer
       center={mapCenter}
-      zoom={18}
+      zoom={17}
       zoomControl={false}
       scrollWheelZoom
       style={{
