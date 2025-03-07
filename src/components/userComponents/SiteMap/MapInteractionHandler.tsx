@@ -11,7 +11,7 @@ function RecenterMap({ center }: { center: LatLngExpression }) {
   const map = useMap();
 
   useEffect(() => {
-    map.flyTo(center, map.getZoom());
+    map.flyTo(center, map.setZoom(18));
   }, [center, map]);
 
   return null;
