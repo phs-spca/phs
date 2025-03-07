@@ -81,7 +81,7 @@ function SiteMap({ mode }: SiteMapProps) {
           if (cacheRef.current.tours) {
             data = cacheRef.current.tours;
           } else {
-            data = await fetchAllSpotlights();
+            data = await fetchAllTours();
             cacheRef.current.tours = data;
           }
         } else if (mode === 'exhibits') {
