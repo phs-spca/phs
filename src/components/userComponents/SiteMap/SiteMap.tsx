@@ -2,7 +2,7 @@ import L, { LatLngExpression } from 'leaflet';
 import React, { useEffect, useState, useRef } from 'react';
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import { renderToStaticMarkup } from 'react-dom/server';
-import { fetchAllSpotlights } from '../../../supabase/tours/queries';
+import { fetchAllTours } from '../../../supabase/tours/queries';
 import { ExhibitWithCategoryRow, TourRow } from '../../../types/types';
 import Control from './Control';
 import { fetchAllExhibits } from '../../../supabase/exhibits/queries';
