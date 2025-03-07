@@ -74,7 +74,7 @@ function SiteMap({ mode }: SiteMapProps) {
      * It will fetch tours when spotlights == True
      */
     async function fetchData() {
-      setLoading(true);
+      setLoading(false);
       try {
         let data;
         if (mode === 'tours') {
