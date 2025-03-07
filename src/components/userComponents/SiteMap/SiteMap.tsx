@@ -17,8 +17,8 @@ import TourPreviewCard from './TourPreviewCard';
 import { useWebDeviceDetection } from '../../../context/WindowWidthContext/WindowWidthContext';
 
 const center: LatLngExpression = {
-  lat: 37.251837,
-  lng: -122.083480,
+  lat: 37.251642,
+  lng: -122.08486,
 };
 
 const tileLayer: { attribution: string; url: string } = {
