@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] });
 const lato = Lato({ weight: ['400', '700'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Peninsula Humane Society & SPCA Wildlife Care Center',
+  title: 'HootWise - Peninsula Humane Society & SPCA Wildlife Care Center',
   description: 'Companion Web Application for Peninsula Humane Society & SPCA Wildlife Care Center in Saratoga, California.',
 };
 
