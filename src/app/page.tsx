@@ -41,6 +41,7 @@ function Home() {
         )}
       </div>
       <HomeWildlifeSpotlights />
+      <VisitorResources />
       <HomeVirtualTours />
       <HomeNewsFeed />
       <Footer />
