@@ -60,7 +60,7 @@ function SiteMap({ mode }: SiteMapProps) {
   >(null);
   const [mapCenter, setMapCenter] = useState<LatLngExpression>(center);
   const [selectedMarker, setSelectedMarker] = useState<number | null>(null);
-  const [loading, setLoading] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(true);
   const isWebDevice = useWebDeviceDetection();
   const cacheRef = useRef<{
     tours?: TourRow[];
@@ -71,10 +71,10 @@ function SiteMap({ mode }: SiteMapProps) {
     /**
      * This useEffect will manage fetching Data depending on if the chosen map is tours or exhibits.
      * It will also manage the initial state of the map when no marker is chosen
-     * It will fetch tours when spotlights == False
+     * It will fetch tours when spotlights == True (This is NOT desired, but I'm leaving this here until we can fix it -Michael)
      */
     async function fetchData() {
-      setLoading(false);
+      setLoading(true);
       try {
         let data;
         if (mode === 'tours') {
