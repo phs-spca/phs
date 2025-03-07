@@ -22,7 +22,7 @@ export async function fetchAllTours(): Promise<TourRow[]> {
 export async function fetchAllSpotlights(): Promise<TourRow[]> {
   const { data, error } = await supabase
     .from('tours')
-    .select('*')
+    .select()
     .eq('category', spotlight)
   if (error) {
     throw new Error(
