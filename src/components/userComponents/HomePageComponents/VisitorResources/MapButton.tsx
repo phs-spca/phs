@@ -27,7 +27,7 @@ function MapButton() {
         <FiCompass className="w-7 h-7 text-scary-forest" />
       </div>
       <p className="b1 w-20 text-night text-base font-bold leading-tight">
-        View Map
+        Site Maps
       </p>
     </Link>
   );
