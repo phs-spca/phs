@@ -167,31 +167,27 @@ function Input({
             <hr className="border-silver w-[322px] m-auto h-[.5px] mt-5 mb-8" />
             <div className="bg-scary-forest flex justify-around text-center text-ivory font-[Lato] gap-4 active:text-[#bcc0bb]">
               <div className="flex flex-col gap-4">
-                <Link href="/hours-and-location">
+                <Link href="/exhibits">
                   {' '}
-                  <p> Hours & Locations </p>{' '}
+                  <p> Exhibits </p>{' '}
                 </Link>
                 <Link href="/site-maps">
                   {' '}
                   <p> Site Maps </p>{' '}
                 </Link>
-                <Link href="/virtual-tours">
+                <Link href="/hours-and-location">
                   {' '}
-                  <p> Virtual Tours </p>{' '}
+                  <p> Hours & Locations </p>{' '}
                 </Link>
               </div>
               <div className="flex flex-col gap-4">
-                <Link href="/exhibits">
-                  {' '}
-                  <p> Exhibits </p>{' '}
-                </Link>
-                <Link href="/news">
-                  {' '}
-                  <p> News </p>{' '}
-                </Link>
                 <Link href="/wildlife-spotlights">
                   {' '}
                   <p> Wildlife Spotlights </p>{' '}
+                </Link>
+                <Link href="/virtual-tours">
+                  {' '}
+                  <p> Virtual Tours </p>{' '}
                 </Link>
               </div>
             </div>
@@ -244,32 +240,30 @@ function Input({
             </div>
             <div className="w-[9.375rem] flex flex-col gap-4 text-ivory active:text-[#bcc0bb]">
               <p className="text-silver s2"> VISIT </p>
-              <Link href="/hours-and-location">
+              
+              <Link href="/exhibits">
                 {' '}
-                <p> Hours & Location </p>
+                <p> Exhibits </p>
               </Link>
               <Link href="/site-maps">
                 {' '}
                 <p> Site Maps </p>
               </Link>
-              <Link href="/virtual-tours">
+              <Link href="/hours-and-location">
                 {' '}
-                <p> Virtual Tours</p>{' '}
+                <p> Hours & Location </p>
               </Link>
             </div>
             <div className="w-[150px] flex flex-col gap-4 text-ivory active:text-[#bcc0bb]">
               <p className="text-silver s2"> LEARN & EXPLORE </p>
-              <Link href="/exhibits">
-                {' '}
-                <p> Exhibits </p>
-              </Link>
-              <Link href="/news">
-                {' '}
-                <p> News </p>{' '}
-              </Link>
+
               <Link href="/wildlife-spotlights">
                 {' '}
                 <p>Wildlife Spotlights</p>{' '}
+              </Link>
+              <Link href="/virtual-tours">
+                {' '}
+                <p> Virtual Tours</p>{' '}
               </Link>
             </div>
             <div className="flex flex-col gap-4 s1 mr-56">
