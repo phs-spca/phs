@@ -24,7 +24,7 @@ export async function fetchAllSpotlights(): Promise<TourRow[]> {
     .from('tours')
     .select('*')
     .eq('spotlight', true)
-    .eq('category', SiteFeatures);
+    .eq('category', sitefeatures);
   if (error) {
     throw new Error(
       `An error occurred while trying to read tour displays: ${error}`,
