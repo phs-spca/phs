@@ -177,7 +177,7 @@ function Input({
                 </Link>
                 <Link href="/hours-and-location">
                   {' '}
-                  <p> Hours & Locations </p>{' '}
+                  <p> Hours & Location </p>{' '}
                 </Link>
               </div>
               <div className="flex flex-col gap-4">
