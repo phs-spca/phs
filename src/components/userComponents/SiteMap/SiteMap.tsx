@@ -148,7 +148,7 @@ function SiteMap({ mode }: SiteMapProps) {
   return (
     <MapContainer
       center={mapCenter}
-      zoom={12}
+      zoom={16}
       zoomControl={false}
       scrollWheelZoom
       style={{
