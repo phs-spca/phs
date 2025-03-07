@@ -1,4 +1,4 @@
-'use client';
+  'use client';
 
 import supabase from '../client';
 import { TourRow } from '../../types/types';
@@ -23,7 +23,8 @@ export async function fetchAllSpotlights(): Promise<TourRow[]> {
   const { data, error } = await supabase
     .from('tours')
     .select('*')
-    .eq('spotlight', true);
+    .eq('spotlight', true)
+    .eq('category', SiteFeatures);
   if (error) {
     throw new Error(
       `An error occurred while trying to read tour displays: ${error}`,
