@@ -23,7 +23,7 @@ export async function fetchAllSpotlights(): Promise<TourRow[]> {
   const { data, error } = await supabase
     .from('tours')
     .select('*')
-    .eq('spotlight', false)
+    .eq('spotlight', true)
   if (error) {
     throw new Error(
       `An error occurred while trying to read tour displays: ${error}`,
