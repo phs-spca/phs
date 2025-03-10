@@ -7,6 +7,7 @@ import { useWebDeviceDetection } from '../../../../context/WindowWidthContext/Wi
 function WelcomeGraphic() {
   const isWebDevice = useWebDeviceDetection();
   return (
+    <div>
     {isWebDevice && (
       <div
       className="h-50 bg-neutral-900 bg-opacity-60 flex justify-center items-center relative"
@@ -36,8 +37,7 @@ function WelcomeGraphic() {
         </p>
         <br>
       </div>
-    </div>
-      )}
+    </div>)}
   {!isWebDevice && (
     <div
       className="h-96 bg-neutral-900 bg-opacity-60 flex justify-center items-center relative"
@@ -63,8 +63,8 @@ function WelcomeGraphic() {
              pet animals who might be refused at other shelters, but also taking
              care of sick, injured, and orphaned native wildlife.
            </p>
-       </div>
-    )}
+       </div>)}
+      </div>
   );
 }
 
