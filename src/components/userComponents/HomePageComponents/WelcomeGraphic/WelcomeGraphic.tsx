@@ -7,7 +7,7 @@ import { useWebDeviceDetection } from '../../../../context/WindowWidthContext/Wi
 function WelcomeGraphic() {
   const isWebDevice = useWebDeviceDetection();
   return (
-    <div className="Graphic">
+    <>
     {isWebDevice && (
       <div
       className="h-50 bg-neutral-900 bg-opacity-60 flex justify-center items-center relative"
@@ -66,7 +66,7 @@ function WelcomeGraphic() {
           care of sick, injured, and orphaned native wildlife.
         </p>
       </div>)}
-      </div>
+      </>
   );
 }
 
