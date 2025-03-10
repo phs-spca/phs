@@ -133,7 +133,7 @@ function TourPreviewCard({
                 />
               </svg>
             </div>
-            <Link href={`/wildlife-spotlights/${id}`}>
+            <Link href={`/virtual-tours/${id}`}>
               <h3 className="relative pr-[0.31rem] pl-[0.75rem] pt-[0.3rem] pb-[0rem]">
                 <p className="truncate font-medium font-lato text-night  text-base leading-normal">
                   {name1}
