@@ -8,9 +8,9 @@ import { BackArrow } from '../../../public/icons';
 import Footer from '../../components/userComponents/Footer/Footer';
 
 /**
- * @returns The hours and location page.
+ * @returns The about us page
  */
-export default function HoursLocationPage() {
+export default function AboutUsPage() {
   const [isWide, setIsWide] = useState(false);
 
   useEffect(() => {
@@ -44,24 +44,14 @@ export default function HoursLocationPage() {
             />
             <div className="flex flex-col gap-[3.31rem]">
               <div className="flex flex-col gap-[2.12rem]">
-                <h4 className="text-night">Site Information</h4>
+                <h4 className="text-night">About Us</h4>
                 <div className="flex flex-col">
                   <div className="mb-9">
                     <div className="flex flex-row gap-[0.56rem] items-center">
-                      <FiCompass className="text-scary-forest w-[1.375rem] h-[1.375rem] flex-shrink-0" />
-                      <p className="b2 text-night">
-                        24103 Congress Springs Road,
-                      </p>
+                  <p className="b3 text-night w-[24.75rem]">
+                  The Peninsula Humane Society & SPCA (PHS/SPCA) is a local, private, non-profit charitable organization dedicated to animal welfare. PHS/SPCA is truly an open admission shelter, not only accepting many pet animals who might be refused at other shelters, but also taking care of sick, injured, and orphaned native wildlife.
+                </p>
                     </div>
-                    <p className="b2 text-night pl-8">Saratoga, CA 95070</p>
-                  </div>
-                  <div className="flex gap-[0.56rem] items-center mb-[0.62rem]">
-                    <FiCalendar className="text-scary-forest w-[1.375rem] h-[1.375rem] flex-shrink-0" />
-                    <p className="b2 text-night">
-                      Monday-Sunday | 9 AM to 6 PM
-                    </p>
-                  </div>
-                  <p className="s1 text-night pl-8">Closed on holidays*</p>
                 </div>
               </div>
               <div>
