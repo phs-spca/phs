@@ -54,6 +54,7 @@ export default function AboutUsPage() {
                     </div>
                 </div>
               </div>
+                </div>
               <div>
                 <h4 className="text-night mb-[2.12rem]">Contact Us</h4>
                 <div className="flex flex-col gap-4 mb-8">
