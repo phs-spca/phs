@@ -22,7 +22,7 @@ function WelcomeGraphic() {
     >
       <div className="w-80 h-38 flex-col justify-start items-center gap-1 inline-flex">
         {/* <div className="flex-col justify-start items-center gap-1 flex"> */}
-        <br>
+        <br/>
         <p className=" font-light text-center">WELCOME TO</p>
         <h1 className="text-center w-80">The Peninsula Humane</h1>
         <h1 className="text-center w-80">Society & SPCA</h1>
@@ -34,7 +34,7 @@ function WelcomeGraphic() {
           pet animals who might be refused at other shelters, but also taking
           care of sick, injured, and orphaned native wildlife.
         </p>
-        <br>
+        <br/>
       </div>
     </div>)}
   {!isWebDevice && (
