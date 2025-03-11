@@ -35,7 +35,7 @@ function WelcomeGraphic() {
           care of sick, injured, and orphaned native wildlife.
         </p>
         <br>
-      </div></br></div>
+      </div>
     </div>)}
   {!isWebDevice && (
     <div
@@ -64,7 +64,7 @@ function WelcomeGraphic() {
           care of sick, injured, and orphaned native wildlife.
         </p>
       </div>)}
-      </div></div>
+      </div>
   );
 }
 
