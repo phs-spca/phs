@@ -11,7 +11,7 @@ import { useWebDeviceDetection } from '../../context/WindowWidthContext/WindowWi
 import Footer from '../../components/userComponents/Footer/Footer';
 
 /**
- * @description queries from the news table in supabase and fetches all the news rows to display
+ * @description queries from the news table in supabase and fetches all the news rows to display; this is currently not in use
  * @returns news feed page by querying from the news table in supabase
  */
 export default function App() {
