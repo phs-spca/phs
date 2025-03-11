@@ -1,3 +1,4 @@
+import React from 'react';
 import { useWebDeviceDetection } from '../../../../context/WindowWidthContext/WindowWidthContext';
 
 /**
