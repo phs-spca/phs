@@ -34,7 +34,7 @@ export default function AboutUsPage() {
             <p className="s3 text-night">
               <span className="text-scary-forest">Home</span> / Hours & Location
             </p>
-            <h1 className="text-night">Hours & Location</h1>
+            <h1 className="text-night">About Us</h1>
           </div>
           <div className="flex flex-row gap-[5.69rem]">
             <img
@@ -92,22 +92,15 @@ export default function AboutUsPage() {
             <BackArrow />
           </Link>
         </div>
-        <h1 className="text-night mb-4">Hours & Location</h1>
-        <h4 className="text-night mb-4">Site Information</h4>
+        <h1 className="text-night mb-4">About Us</h1>
+        <h4 className="text-night mb-4">About Us</h4>
 
         <div className="bg-[#EBF0E8] rounded-lg py-8 pl-[1.13rem] pr-[1.56rem] mb-[2.38rem]">
           <div className="mb-[1.81rem]">
             <div className="flex gap-[0.56rem] items-center">
-              <FiCompass className="text-scary-forest w-[1.375rem] h-[1.375rem] flex-shrink-0" />
-              <p className="b2 text-night">24103 Congress Springs Road,</p>
+              <p className="b2 text-night">The Peninsula Humane Society & SPCA (PHS/SPCA) is a local, private, non-profit charitable organization dedicated to animal welfare. PHS/SPCA is truly an open admission shelter, not only accepting many pet animals who might be refused at other shelters, but also taking care of sick, injured, and orphaned native wildlife.</p>
             </div>
-            <p className="b2 text-night pl-8">Saratoga, CA 95070</p>
           </div>
-          <div className="flex gap-[0.56rem] mb-[0.69rem] items-center">
-            <FiCalendar className="text-scary-forest w-[1.375rem] h-[1.375rem] flex-shrink-0" />
-            <p className="b2 text-night">Monday-Sunday | 9 AM to 6 PM</p>
-          </div>
-          <p className="s1 text-night pl-8">Closed on holidays*</p>
         </div>
 
         <h4 className="text-night mb-[1.56rem]">Contact Us</h4>
