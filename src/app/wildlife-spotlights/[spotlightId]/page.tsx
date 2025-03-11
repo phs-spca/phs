@@ -133,9 +133,7 @@ export default function Page({ params }: { params: { spotlightId: string } }) {
                 )}
               </div>
 
-              <p className="b3 text-night mb-[3.75rem]">
-                {spotlight?.description}
-              </p>
+              <p className="b3 text-night mb-[3.75rem]" dangerouslySetInnerHTML={{ __html: spotlight?.description }}/>
 
               <div className="mb-[3.75rem]">
                 <RelatedLinks />
@@ -245,7 +243,7 @@ export default function Page({ params }: { params: { spotlightId: string } }) {
       <div className="flex flex-col gap-10 px-[1.12rem] pt-8 pb-10">
         <div className="flex flex-col gap-5">
           <h1 className="text-night">{spotlight?.name}</h1>
-          <p className="b3 text-night">{spotlight?.description}</p>
+          <p className="b3 text-night" dangerouslySetInnerHTML={{ __html: spotlight?.description }}/>
         </div>
 
         {displays.length > 0 && (
