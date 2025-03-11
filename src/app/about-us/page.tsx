@@ -8,7 +8,7 @@ import { BackArrow } from '../../../public/icons';
 import Footer from '../../components/userComponents/Footer/Footer';
 
 /**
- * @returns The hours and location page.
+ * @returns The hours and location page. 
  */
 export default function HoursLocationPage() {
   const [isWide, setIsWide] = useState(false);
