@@ -38,8 +38,8 @@ export default function AboutUsPage() {
           </div>
           <div className="flex flex-row gap-[5.69rem]">
             <img
-              src="https://qkkuacqtcsfjbnzmxmhk.supabase.co/storage/v1/object/public/images/Hours_Location3.JPG?t=2024-05-05T03%3A55%3A28.082Z"
-              alt="Hours & Location"
+              src="https://qkkuacqtcsfjbnzmxmhk.supabase.co/storage/v1/object/public/images//PHSLogo_transparent_PNG.png"
+              alt="About Us"
               className="object-cover w-[30.375rem] h-[25.6875rem] rounded-xl"
             />
             <div className="flex flex-col gap-[3.31rem]">
