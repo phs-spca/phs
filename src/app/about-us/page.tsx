@@ -71,9 +71,7 @@ export default function AboutUsPage() {
                   </div>
                 </div>
                 <p className="b3 text-night w-[24.75rem]">
-                  If you’ve found a wild animal that appears to be sick,
-                  injured, or orphaned, safely contain it and either bring it to
-                  our nearest shelter or contact us for guidance.
+                 HootWise makes exploring even more exciting with our virtual site tour! You'll get all the fascinating details about the animals in our rehabilitation enclosures right at your fingertips.
                 </p>
               </div>
             </div>
