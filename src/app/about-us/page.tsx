@@ -93,7 +93,12 @@ export default function AboutUsPage() {
         </div>
         <h1 className="text-night mb-4">About Us</h1>
         <h4 className="text-night mb-4">About Us</h4>
-
+<div className="flex flex-row gap-[1.81rem]">
+            <img
+              src="https://qkkuacqtcsfjbnzmxmhk.supabase.co/storage/v1/object/public/images//PHSLogo_transparent_PNG.png"
+              alt="About Us"
+              className="object-cover w-[30.375rem] h-[25.6875rem] rounded-xl"
+            />
         <div className="bg-[#EBF0E8] rounded-lg py-8 pl-[1.13rem] pr-[1.56rem] mb-[2.38rem]">
           <div className="mb-[1.81rem]">
             <div className="flex gap-[0.56rem] items-center">
