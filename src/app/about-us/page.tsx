@@ -56,25 +56,23 @@ export default function AboutUsPage() {
               </div>
                 </div>
               <div>
-                <h4 className="text-night mb-[2.12rem]">Contact Us</h4>
+                <h4 className="text-night mb-[2.12rem]">HootWise</h4>
                 <div className="flex flex-col gap-4 mb-8">
                   <div className="flex flex-row gap-[0.62rem] items-center">
-                    <p className="b3 text-night">Wildlife Care Center</p>
-                    <p className="s1 text-shadow">650-340-7022</p>
+                    <p className="b3 text-night">Embark on an exciting journey with HootWise, your personal wildlife companion app! This fun digital guide helps you:</p>
                   </div>
                   <div className="flex flex-row gap-[0.62rem] items-center">
-                    <p className="b3 text-night">Peninsula Intake</p>
-                    <p className="s1 text-shadow">650-340-7022</p>
+                    <p className="b3 text-night">Explore our Wildlife Care Center's main attractions</p>
                   </div>
                   <div className="flex flex-row gap-[0.62rem] items-center">
-                    <p className="b3 text-night">South Bay Intake</p>
-                    <p className="s1 text-shadow">650-340-7022</p>
+                    <p className="b3 text-night">Discover fascinating Interactive Exhibits along our Learning Pathe</p>
+                  </div>
+                  <div className="flex flex-row gap-[0.62rem] items-center">
+                    <p className="b3 text-night">Unlock Wildlife Spotlights that answer your most curious questions</p>
                   </div>
                 </div>
                 <p className="b3 text-night w-[24.75rem]">
-                  If you’ve found a wild animal that appears to be sick,
-                  injured, or orphaned, safely contain it and either bring it to
-                  our nearest shelter or contact us for guidance.
+                  HootWise makes exploring even more exciting with our virtual site tour! You'll get all the fascinating details about the animals in our rehabilitation enclosures right at your fingertips.
                 </p>
               </div>
             </div>
