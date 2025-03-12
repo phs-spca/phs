@@ -8,7 +8,7 @@ import { BackArrow } from '../../../public/icons';
 import Footer from '../../components/userComponents/Footer/Footer';
 
 /**
- * @returns The about us page
+ * @returns The about us page 
  */
 export default function AboutUsPage() {
   const [isWide, setIsWide] = useState(false);
