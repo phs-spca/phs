@@ -56,12 +56,7 @@ export default function AboutUsPage() {
               </div>
                 </div>
               <div>
-                <h4 className="text-night mb-[2.12rem]">HootWise</h4>
-                <div className="flex flex-col gap-4 mb-8">
-                  <div className="flex flex-row gap-[0.62rem] items-center">
-                    <p className="b3 text-night">Wildlife Care Center</p>
-                    <p className="s1 text-shadow">650-340-7022</p>
-                  </div>
+                <h4 className="text-night mb-[2.12rem]">Contact Us</h4>
                 <div className="flex flex-col gap-4 mb-8">
                   <div className="flex flex-row gap-[0.62rem] items-center">
                     <p className="b3 text-night">Wildlife Care Center</p>
