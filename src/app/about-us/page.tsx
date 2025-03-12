@@ -31,7 +31,7 @@ export default function AboutUsPage() {
         <div className="flex flex-col gap-14">
           <div className="flex flex-col gap-6">
             <p className="s3 text-night">
-              <span className="text-scary-forest">Home</span> / Hours & Location
+              <span className="text-scary-forest">Home</span> / About Us
             </p>
             <h1 className="text-night">About Us</h1>
           </div>
