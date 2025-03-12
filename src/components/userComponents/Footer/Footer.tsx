@@ -189,6 +189,10 @@ function Input({
                   {' '}
                   <p> Virtual Tours </p>{' '}
                 </Link>
+                <Link href="/about-us">
+                  {' '}
+                  <p> About Us </p>{' '}
+                </Link>
               </div>
             </div>
             <div className="w-full pt-6 gap-4 bg-scary-forest">
@@ -264,6 +268,10 @@ function Input({
               <Link href="/virtual-tours">
                 {' '}
                 <p> Virtual Tours</p>{' '}
+              </Link>
+              <Link href="/about-us">
+                {' '}
+                <p> About Us</p>{' '}
               </Link>
             </div>
             <div className="flex flex-col gap-4 s1 mr-56">
