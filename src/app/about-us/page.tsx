@@ -27,6 +27,7 @@ export default function AboutUsPage() {
 
   return isWide ? (
     <div className="bg-ivory min-h-screen">
+      </div>
       <NavBar />
       <div className="py-[6.25rem] flex justify-center">
         <div className="flex flex-col gap-14">
