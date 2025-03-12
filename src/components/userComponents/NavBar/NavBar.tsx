@@ -53,6 +53,7 @@ export default function NavBar() {
           <Link href="/site-maps">Site Maps</Link>
           <Link href="/virtual-tours">Virtual Tours</Link>
           <Link href="/hours-and-location">Hours & Location</Link>
+          <Link href="/about-us">About Us</Link>
         </p>
       </div>
       <div className="bg-hunter-green w-full h-[0.375rem]" />
@@ -103,6 +104,7 @@ export default function NavBar() {
                 <Link href="/exhibits">Exhibits</Link>
                 <Link href="/site-maps">Site Maps</Link>
                 <Link href="/hours-and-location">Hours & Location</Link>
+                <Link href="/about-us">About Us</Link>
               </h4>
             </div>
             <div>
