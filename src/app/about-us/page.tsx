@@ -71,7 +71,9 @@ export default function AboutUsPage() {
                   </div>
                 </div>
                 <p className="b3 text-night w-[24.75rem]">
-                 HootWise makes exploring even more exciting with our virtual site tour! You'll get all the fascinating details about the animals in our rehabilitation enclosures right at your fingertips.
+                  HootWise makes exploring even more exciting with our
+                  virtual site tour! You'll get all the fascinating details about
+                  the animals in our rehabilitation enclosures right at your fingertips.
                 </p>
               </div>
             </div>
