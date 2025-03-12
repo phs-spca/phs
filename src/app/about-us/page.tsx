@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { FiCalendar, FiCompass } from 'react-icons/fi';
 import Link from 'next/link';
 import NavBar from '../../components/userComponents/NavBar/NavBar';
 import { BackArrow } from '../../../public/icons';
@@ -59,7 +58,7 @@ export default function AboutUsPage() {
                 <h4 className="text-night mb-[2.12rem]">Contact Us</h4>
                 <div className="flex flex-col gap-4 mb-8">
                   <div className="flex flex-row gap-[0.62rem] items-center">
-                    <p className="b3 text-night">Wildlife Care Center</p>
+                    <p className="b3 text-night">Wildlife Care TESTr</p>
                     <p className="s1 text-shadow">650-340-7022</p>
                   </div>
                   <div className="flex flex-row gap-[0.62rem] items-center">
