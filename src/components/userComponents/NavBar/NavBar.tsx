@@ -104,7 +104,6 @@ export default function NavBar() {
                 <Link href="/exhibits">Exhibits</Link>
                 <Link href="/site-maps">Site Maps</Link>
                 <Link href="/hours-and-location">Hours & Location</Link>
-                <Link href="/about-us">About Us</Link>
               </h4>
             </div>
             <div>
@@ -115,6 +114,7 @@ export default function NavBar() {
                 <h4 className="text-night flex flex-col gap-[1.38rem] pl-5">
                   <Link href="/wildlife-spotlights">Wildlife Spotlights</Link>
                   <Link href="/virtual-tours">Virtual Tours</Link>
+                  <Link href="/about-us">About Us</Link>
                 </h4>
               </div>
             </div>
