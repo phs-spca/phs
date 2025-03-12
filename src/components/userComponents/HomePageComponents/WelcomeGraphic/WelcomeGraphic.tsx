@@ -29,11 +29,11 @@ function WelcomeGraphic() {
         <h1 className="text-center w-80">Society & SPCA</h1>
         <h1 className="text-center w-80">Wildlife Care Center</h1>
         <p className="b3 font-light mt-7 w-96 text-center">
-          Embark on an exciting journey with HootWise, your personal wildlife companion app! This fun digital guide helps you:
-Explore our Wildlife Care Center's main attractions
-Discover fascinating Interactive Exhibits along our Learning Path
-Unlock Wildlife Spotlights that answer your most curious questions
-HootWise makes exploring even more exciting with our virtual site tour! You'll get all the fascinating details about the animals in our rehabilitation enclosures right at your fingertips.
+          The Peninsula Humane Society & SPCA (PHS/SPCA) is a local, private,
+          non-profit charitable organization dedicated to animal welfare.
+          PHS/SPCA is truly an open admission shelter, not only accepting many
+          pet animals who might be refused at other shelters, but also taking
+          care of sick, injured, and orphaned native wildlife.
         </p>
         <br/>
       </div>
