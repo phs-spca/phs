@@ -55,33 +55,7 @@ export default function AboutUsPage() {
                 </div>
               </div>
                 </div>
-              <div>
-                <h4 className="text-night mb-[2.12rem]">Contact Us</h4>
-                <div className="flex flex-col gap-4 mb-8">
-                  <div className="flex flex-row gap-[0.62rem] items-center">
-                    <p className="b3 text-night">Wildlife Care Center</p>
-                    <p className="s1 text-shadow">650-340-7022</p>
-                  </div>
-                  <div className="flex flex-row gap-[0.62rem] items-center">
-                    <p className="b3 text-night">Peninsula Intake</p>
-                    <p className="s1 text-shadow">650-340-7022</p>
-                  </div>
-                  <div className="flex flex-row gap-[0.62rem] items-center">
-                    <p className="b3 text-night">South Bay Intake</p>
-                    <p className="s1 text-shadow">650-340-7022</p>
-                  </div>
-                </div>
-                <p className="b3 text-night w-[24.75rem]">
-                  If you’ve found a wild animal that appears to be sick,
-                  injured, or orphaned, safely contain it and either bring it to
-                  our nearest shelter or contact us for guidance.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <Footer />
+             <Footer />
     </div>
   ) : (
     <div className="bg-ivory min-h-screen">
@@ -103,27 +77,6 @@ export default function AboutUsPage() {
           </div>
         </div>
 
-        <h4 className="text-night mb-[1.56rem]">Contact Us</h4>
-        <div className="flex flex-col gap-6 pl-[1.31rem] pb-[1.81rem]">
-          <div className="flex flex-row gap-[0.62rem] items-center">
-            <p className="b3 text-night">Wildlife Care Center</p>
-            <p className="s1 text-shadow">650-340-7022</p>
-          </div>
-          <div className="flex flex-row gap-[0.62rem] items-center">
-            <p className="b3 text-night">Peninsula Intake</p>
-            <p className="s1 text-shadow">650-340-7022</p>
-          </div>
-          <div className="flex flex-row gap-[0.62rem] items-center">
-            <p className="b3 text-night">South Bay Intake</p>
-            <p className="s1 text-shadow">650-340-7022</p>
-          </div>
-        </div>
-        <p className="b3 text-night pl-[1.31rem]">
-          If you’ve found a wild animal that appears to be sick, injured, or
-          orphaned, safely contain it and either bring it to our nearest shelter
-          or contact us for guidance.
-        </p>
-      </div>
       <Footer />
     </div>
   );
