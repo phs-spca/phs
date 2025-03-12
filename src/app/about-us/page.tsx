@@ -55,6 +55,7 @@ export default function AboutUsPage() {
                 </div>
               </div>
                 </div>
+              </div>
              <Footer />
     </div>
   ) : (
