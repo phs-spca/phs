@@ -54,11 +54,6 @@ export default function AboutUsPage() {
                 </div>
               </div>
                 </div>
-                <p className="b3 text-night w-[24.75rem]">
-                  If you’ve found a wild animal that appears to be sick,
-                  injured, or orphaned, safely contain it and either bring it to
-                  our nearest shelter or contact us for guidance.
-                </p>
               </div>
             </div>
           </div>
@@ -84,11 +79,6 @@ export default function AboutUsPage() {
             </div>
           </div>
         </div>
-        <p className="b3 text-night pl-[1.31rem]">
-          If you’ve found a wild animal that appears to be sick, injured, or
-          orphaned, safely contain it and either bring it to our nearest shelter
-          or contact us for guidance.
-        </p>
       </div>
       <Footer />
     </div>
