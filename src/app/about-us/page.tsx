@@ -65,6 +65,7 @@ export default function AboutUsPage() {
         </div>
       </div>
       <Footer />
+    </div>
   ) : (
     <div className="bg-ivory min-h-screen">
       <NavBar />
