@@ -66,10 +66,7 @@ function App() {
                 the QR codes on display for more information.
               </p>
             </div>
-            <Link to={{
-                pathname: "/site-maps",
-                state: {buttonState: "exhibits"}
-              }}>
+            <Link href="/site-maps">
               <div className="px-4 py-2 mb-2 mt-6 rounded-md border active:border-hunterGreen border-asparagus justify-start items-start inline-flex">
                 <p className="active:text-hunterGreen text-center text-asparagus font-bold font-['Lato'] leading-tight">
                   Go to Map
