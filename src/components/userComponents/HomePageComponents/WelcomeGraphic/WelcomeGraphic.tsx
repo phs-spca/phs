@@ -32,10 +32,10 @@ function WelcomeGraphic() {
           Embark on an exciting journey with HootWise, your personal wildlife companion app! This fun digital guide helps you:
         </p>
 
-        <ul className="font-light">
-          <li>Explore our Wildlife Care Center&apos;s main attractions</li>
-          <li>Discover fascinating Interactive Exhibits along our Learning Path</li>
-          <li>Unlock Wildlife Spotlights that answer your most curious questions</li>
+        <ul className="b3 font-light mt-7 w-96 text-left">
+          <li>- Explore our Wildlife Care Center&apos;s main attractions</li>
+          <li>- Discover fascinating Interactive Exhibits along our Learning Path</li>
+          <li>- Unlock Wildlife Spotlights that answer your most curious questions</li>
         </ul>
         
         <p className="b3 font-light mt-7 w-96 text-left">
@@ -65,14 +65,14 @@ function WelcomeGraphic() {
       
     {!isWebDevice && (
     <div className="IntroInfo web:w-full web:h-72 bg-ivory web:bg-mint-cream inline-flex flex-col justify-center items-center">
-        <p className="=b3 w-full px-4 py-10 text-night text-left text-base gap-4">
+        <p className="b3 w-full px-4 py-10 text-night text-left text-base gap-4">
           Embark on an exciting journey with HootWise, your personal wildlife companion app! This fun digital guide helps you:
         </p>
 
-        <ul className="=text-night">
-          <li>Explore our Wildlife Care Center&apos;s main attractions</li>
-          <li>Discover fascinating Interactive Exhibits along our Learning Path</li>
-          <li>Unlock Wildlife Spotlights that answer your most curious questions</li>
+        <ul className="b3 w-full px-4 py-10 text-night text-left text-base gap-4">
+          <li>- Explore our Wildlife Care Center&apos;s main attractions</li>
+          <li>- Discover fascinating Interactive Exhibits along our Learning Path</li>
+          <li>- Unlock Wildlife Spotlights that answer your most curious questions</li>
         </ul>
         
         <p className="b3 w-full px-4 py-10 text-night text-left text-base gap-4">
