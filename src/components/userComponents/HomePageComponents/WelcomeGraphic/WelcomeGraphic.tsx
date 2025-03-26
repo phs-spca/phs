@@ -32,7 +32,7 @@ function WelcomeGraphic() {
           Embark on an exciting journey with HootWise, your personal wildlife companion app! This fun digital guide helps you:
         </p>
 
-        <ul>
+        <ul className="b3 font-light mt-7 w-96 text-center">
           <li>Explore our Wildlife Care Center&apos;s main attractions</li>
           <li>Discover fascinating Interactive Exhibits along our Learning Path</li>
           <li>Unlock Wildlife Spotlights that answer your most curious questions</li>
@@ -69,7 +69,7 @@ function WelcomeGraphic() {
           Embark on an exciting journey with HootWise, your personal wildlife companion app! This fun digital guide helps you:
         </p>
 
-        <ul>
+        <ul className="=b3 w-full px-4 py-10 text-night text-center text-base gap-4">
           <li>Explore our Wildlife Care Center&apos;s main attractions</li>
           <li>Discover fascinating Interactive Exhibits along our Learning Path</li>
           <li>Unlock Wildlife Spotlights that answer your most curious questions</li>
