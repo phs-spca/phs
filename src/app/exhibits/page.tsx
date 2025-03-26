@@ -68,7 +68,7 @@ function App() {
             </div>
             <Link to={{
                 pathname: "/site-maps",
-                state: {"exhibits"}
+                state: {buttonState: "exhibits"}
               }}>
               <div className="px-4 py-2 mb-2 mt-6 rounded-md border active:border-hunterGreen border-asparagus justify-start items-start inline-flex">
                 <p className="active:text-hunterGreen text-center text-asparagus font-bold font-['Lato'] leading-tight">
