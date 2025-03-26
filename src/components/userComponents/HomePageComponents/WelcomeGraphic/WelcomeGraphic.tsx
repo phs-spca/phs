@@ -32,10 +32,10 @@ function WelcomeGraphic() {
           Embark on an exciting journey with HootWise, your personal wildlife companion app! This fun digital guide helps you:
         </p>
 
-        <ul>
-          <li className="b3 font-light mt-7 w-96 text-left">Explore our Wildlife Care Center&apos;s main attractions</li>
-          <li className="b3 font-light mt-7 w-96 text-left">Discover fascinating Interactive Exhibits along our Learning Path</li>
-          <li className="b3 font-light mt-7 w-96 text-left">Unlock Wildlife Spotlights that answer your most curious questions</li>
+        <ul className="font-light">
+          <li>Explore our Wildlife Care Center&apos;s main attractions</li>
+          <li>Discover fascinating Interactive Exhibits along our Learning Path</li>
+          <li>Unlock Wildlife Spotlights that answer your most curious questions</li>
         </ul>
         
         <p className="b3 font-light mt-7 w-96 text-left">
@@ -69,10 +69,10 @@ function WelcomeGraphic() {
           Embark on an exciting journey with HootWise, your personal wildlife companion app! This fun digital guide helps you:
         </p>
 
-        <ul>
-          <li className="=b3 w-full px-4 py-10 text-night text-left text-base gap-4">Explore our Wildlife Care Center&apos;s main attractions</li>
-          <li className="=b3 w-full px-4 py-10 text-night text-left text-base gap-4">Discover fascinating Interactive Exhibits along our Learning Path</li>
-          <li className="=b3 w-full px-4 py-10 text-night text-left text-base gap-4">Unlock Wildlife Spotlights that answer your most curious questions</li>
+        <ul className="=text-night">
+          <li>Explore our Wildlife Care Center&apos;s main attractions</li>
+          <li>Discover fascinating Interactive Exhibits along our Learning Path</li>
+          <li>Unlock Wildlife Spotlights that answer your most curious questions</li>
         </ul>
         
         <p className="b3 w-full px-4 py-10 text-night text-left text-base gap-4">
