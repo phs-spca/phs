@@ -29,10 +29,10 @@ function WelcomeGraphic() {
         <h1 className="text-center w-80">Society & SPCA</h1>
         <h1 className="text-center w-80">Wildlife Care Center</h1>
         <p className="b3 font-light mt-7 w-96 text-left">
-          Embark on an exciting journey with HootWise, your personal wildlife companion app! This fun digital guide helps you:
-          - Explore our Wildlife Care Center&apos;s main attractions
-          - Discover fascinating Interactive Exhibits along our Learning Path
-          - Unlock Wildlife Spotlights that answer your most curious questions
+          Embark on an exciting journey with HootWise, your personal wildlife companion app! This fun digital guide helps you:<br/><br/>
+          - Explore our Wildlife Care Center&apos;s main attractions<br/>
+          - Discover fascinating Interactive Exhibits along our Learning Path<br/>
+          - Unlock Wildlife Spotlights that answer your most curious questions<br/><br/>
           HootWise makes exploring even more exciting with our virtual site tour! You&apos;ll get all the fascinating details about the animals in our rehabilitation enclosures right at your fingertips.
         </p>
         <br/>
@@ -60,10 +60,10 @@ function WelcomeGraphic() {
     {!isWebDevice && (
     <div className="IntroInfo web:w-full web:h-72 bg-ivory web:bg-mint-cream inline-flex flex-col justify-center items-center">
         <p className="b3 w-full px-4 py-10 text-night text-left text-base gap-4">
-          Embark on an exciting journey with HootWise, your personal wildlife companion app! This fun digital guide helps you:
-          - Explore our Wildlife Care Center&apos;s main attractions
-          - Discover fascinating Interactive Exhibits along our Learning Path
-          - Unlock Wildlife Spotlights that answer your most curious questions
+          Embark on an exciting journey with HootWise, your personal wildlife companion app! This fun digital guide helps you:<br/><br/>
+          - Explore our Wildlife Care Center&apos;s main attractions<br/>
+          - Discover fascinating Interactive Exhibits along our Learning Path<br/>
+          - Unlock Wildlife Spotlights that answer your most curious questions<br/><br/>
           HootWise makes exploring even more exciting with our virtual site tour! You&apos;ll get all the fascinating details about the animals in our rehabilitation enclosures right at your fingertips.
         </p>
       </div>)}
