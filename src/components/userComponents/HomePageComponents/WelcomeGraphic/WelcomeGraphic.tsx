@@ -16,7 +16,7 @@ function WelcomeGraphic() {
         backgroundSize: '65% 100%',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        backgroundColor: 'white',
+        backgroundColor: '#fffdf7',
         textAlign: 'center',
         lineHeight: '50px'
       }}
