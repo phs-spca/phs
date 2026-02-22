@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter, Lato } from 'next/font/google';
 import React from 'react';
 import { WindowWidthProvider } from '../context/WindowWidthContext/WindowWidthContext';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -46,7 +47,7 @@ export default function RootLayout({
         />
         <script src="html5-qrcode.min.js" />
       </head>
-
+      <GoogleTagManager gtmId='GTM-K7WPHJM2' />
       <body className={`${inter.className} ${lato.className}`}>
         <WindowWidthProvider>{children}</WindowWidthProvider>
       </body>
