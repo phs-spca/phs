@@ -2,8 +2,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter, Lato } from 'next/font/google';
 import React from 'react';
-import { WindowWidthProvider } from '../context/WindowWidthContext/WindowWidthContext';
 import { GoogleTagManager } from '@next/third-parties/google';
+import { WindowWidthProvider } from '../context/WindowWidthContext/WindowWidthContext';
 
 const inter = Inter({ subsets: ['latin'] });
 
