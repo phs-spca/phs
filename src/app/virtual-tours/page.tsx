@@ -63,11 +63,7 @@ export default function VirtualToursPage() {
                 </p>
                 <h1 className="text-night mb-4">Virtual Tours</h1>
                 <p className="b3 text-night mb-[3.12rem]">
-                  Take a virtual sneak peek behind the scenes at our Wildlife
-                  Care Center. Here you will find outside enclosures where sick,
-                  injured, and orphaned wildlife recuperate and acclimate before
-                  being released back into their natural habitat. Choose your
-                  favorite animal to start the tour.
+                  Take a virtual look at some of the species of wild animals we rehabilitate at the Wildlife Care Center. Sick, injured, and orphaned wildlife recuperate and acclimate before being released back into their natural habitat. Choose your favorite animal to start learning more.
                 </p>
                 <div className="bg-silver h-[0.03125rem]" />
               </div>
@@ -143,11 +139,7 @@ export default function VirtualToursPage() {
 
               <h1 className="text-night mb-2">Virtual Tours</h1>
               <p className="b3 text-night mb-6">
-                Take a virtual sneak peek behind the scenes at our Wildlife Care
-                Center. Here you will find outside enclosures where sick,
-                injured, and orphaned wildlife recuperate and acclimate before
-                being released back into their natural habitat. Choose your
-                favorite animal to start the tour.
+              Take a virtual look at some of the species of wild animals we rehabilitate at the Wildlife Care Center. Sick, injured, and orphaned wildlife recuperate and acclimate before being released back into their natural habitat. Choose your favorite animal to start learning more.
               </p>
 
               <ul className="grid grid-cols-1 gap-5 items-center">
