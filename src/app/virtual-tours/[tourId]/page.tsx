@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, use } from 'react';
 import Link from 'next/link';
 
 import { fetchAllDisplays } from '../../../supabase/displays/queries';
@@ -21,17 +21,15 @@ import NavBar from '../../../components/userComponents/NavBar/NavBar';
 import ButtonWithText from '../../../components/userComponents/ButtonWithText/ButtonWithText';
 import Footer from '../../../components/userComponents/Footer/Footer';
 
-/**
- * @param params -
- * @param params.params -
- * @param params.params.tourId - The tour ID
- * @returns The tour start page
- */
-export default function TourStartPage({
-  params,
-}: {
-  params: { tourId: string };
+type Params = Promise<{ tourId: string }>;
+
+
+export default function TourStartPage(props: {
+  params: Params
 }) {
+  const params = use(props.params);
+  const tourId = params.tourId;
+
   const [tour, setTour] = useState<TourRow>();
   const [tourDisplays, setTourDisplays] = useState<TourDisplaysRow[]>([]);
   const [displays, setDisplays] = useState<DisplayRow[]>([]);
@@ -42,20 +40,20 @@ export default function TourStartPage({
   useEffect(() => {
     // Fetch tour, tour displays, and tour media data
     const fetchData = async () => {
-      const fetchedTour = await fetchTour(params.tourId);
+      const fetchedTour = await fetchTour(tourId);
       setTour(fetchedTour);
-      const fetchedTourDisplays = await fetchTourDisplays(params.tourId);
+      const fetchedTourDisplays = await fetchTourDisplays(tourId);
       setTourDisplays(fetchedTourDisplays);
       const fetchedDisplays = await fetchAllDisplays();
       setDisplays(fetchedDisplays);
-      const fetchedTourMedia = await fetchTourMedia(params.tourId);
+      const fetchedTourMedia = await fetchTourMedia(tourId);
       setTourMedia(fetchedTourMedia);
       const fetchedMedia = await fetchMedia();
       setMedia(fetchedMedia);
     };
 
     fetchData();
-  }, [params.tourId]);
+  }, [tourId]);
 
   useEffect(() => {
     if (window) {
@@ -99,7 +97,7 @@ export default function TourStartPage({
                   </div>
                   <div className="flex flex-col gap-[2.62rem]">
                     <Link
-                      href={`/virtual-tours/${params.tourId}/${tourDisplays[0]?.display_id}`}
+                      href={`/virtual-tours/${tourId}/${tourDisplays[0]?.display_id}`}
                     >
                       <div className="w-[12.25rem] h-[2.5625rem]">
                         <ButtonWithText text="Start Tour" />
@@ -175,7 +173,7 @@ export default function TourStartPage({
                     <h1 className="text-night truncate">{tour.name}</h1>
                   </div>
                   <Link
-                    href={`/virtual-tours/${params.tourId}/${tourDisplays[0]?.display_id}`}
+                    href={`/virtual-tours/${tourId}/${tourDisplays[0]?.display_id}`}
                   >
                     <div className="w-[12.25rem] h-10">
                       <ButtonWithText text="Start Tour" />
