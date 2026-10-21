@@ -17,7 +17,7 @@ import { useWebDeviceDetection } from '../../../../context/WindowWidthContext/Wi
  * See All button will lead to the spotlights home page
  * Spotlight scroller will showcase and link to chosen spotlights
  */
-function HomeVirtualTours(): React.JSX.Element {
+function HomeVirtualTours() {
   const isWebDevice = useWebDeviceDetection();
 
   const [tourWithMedia, setToursWithMedia] = useState<TourWithMediaRow[]>([]);
@@ -39,7 +39,7 @@ function HomeVirtualTours(): React.JSX.Element {
 
   return (
     <div
-      className="pl-4 py-20 web:px-56 web:py-24 w-full bg-mint-cream flex-col justify-start 
+      className="pl-4 py-20 web:px-56 web:py-24 w-full bg-mint-cream flex-col justify-start
     items-start gap-6 inline-flex"
     >
       <div className="w-full web:w-280 h-5 justify-between items-center inline-flex">

@@ -17,7 +17,7 @@ import { useWebDeviceDetection } from '../../../../context/WindowWidthContext/Wi
  * See All button will lead to the spotlights home page
  * Spotlight scroller will showcase and link to chosen spotlights
  */
-function HomeWildlifeSpotlights(): React.JSX.Element {
+function HomeWildlifeSpotlights() {
   const isWebDevice = useWebDeviceDetection();
   const [spotlightsWithMedia, setSpotlightsWithMedia] = useState<
     SpotlightWithMediaRow[]
@@ -62,8 +62,8 @@ function HomeWildlifeSpotlights(): React.JSX.Element {
             key={spotlight.id}
           >
             <div
-              className="relative 
-            carousel-item w-60 h-72 web:w-96 rounded-lg 
+              className="relative
+            carousel-item w-60 h-72 web:w-96 rounded-lg
             overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black" />
@@ -73,7 +73,7 @@ function HomeWildlifeSpotlights(): React.JSX.Element {
                 alt="background for spotlight"
               />
               <div
-                className="absolute bottom-0.5 
+                className="absolute bottom-0.5
               p-4 web:pl-7 web:pr-24 web:pt-40 web:pb-8 space-y-2 flex-col"
               >
                 <h4 className="w-45">{spotlight.name}</h4>

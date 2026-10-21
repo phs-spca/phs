@@ -23,7 +23,7 @@ function TourPreviewCard({
   tour,
   handleClick,
   handleClose,
-}: TourCardProps): JSX.Element {
+}: TourCardProps) {
   const [loading, setLoading] = useState<boolean>(false);
   const [previewImage, setPreviewImage] = useState<string>('');
   const [name1, setname1] = useState<string>('');

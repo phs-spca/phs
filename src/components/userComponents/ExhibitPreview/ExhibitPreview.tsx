@@ -16,7 +16,6 @@ import styles from './ExhibitPreview.module.css';
  * @param props.topimage - top image of the exhibit
  * @param props.bottomimage - bottom image of the exhibit
  * @param props.href - href of the exhibit
- * @returns JSX.Element
  */
 export default function ExhibitPreview({
   name,

@@ -30,7 +30,7 @@ function Control({
   children,
   container,
   prepend,
-}: ControlProps): JSX.Element {
+}: ControlProps) {
   const [portalRoot, setPortalRoot] = useState<HTMLElement>(
     document.createElement('div'),
   );

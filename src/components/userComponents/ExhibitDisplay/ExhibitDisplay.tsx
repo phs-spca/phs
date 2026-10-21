@@ -15,7 +15,6 @@ import styles from './ExhibitDisplay.module.css';
  * @param  props.media - media of the exhibit
  * @param  props.bottomimage - bottom image of the exhibit
  * @param  props.moretext - more text of the exhibit
- * @returns JSX.Element
  */
 export default function ExhibitDisplay({
   name,
