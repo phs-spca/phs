@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, use } from 'react';
 
 import {
   TourRow,
@@ -25,13 +25,15 @@ import SpotlightDisplayButton from '../../../components/userComponents/Spotlight
 import RelatedLinks from '../../../components/userComponents/RelatedLinks/RelatedLinks';
 import Footer from '../../../components/userComponents/Footer/Footer';
 
-/**
- * @param params -
- * @param params.params -
- * @param params.params.spotlightId -
- * @returns a spotlight page given a spotlight Id
- */
-export default function Page({ params }: { params: { spotlightId: string } }) {
+type Params = Promise<{ spotlightId: string }>;
+
+
+export default function Page(props: {
+  params: Params
+}) {
+  const params = use(props.params);
+  const spotlightId = params.spotlightId;
+
   const [spotlight, setSpotlight] = useState<TourRow>();
   const [displays, setDisplays] = useState<DisplayRow[]>([]);
   const [media, setMedia] = useState<MediaRow[]>([]);
@@ -46,22 +48,22 @@ export default function Page({ params }: { params: { spotlightId: string } }) {
      */
     async function fetchData() {
       const responseDataForSpotlight: TourRow = await fetchTour(
-        params.spotlightId,
+        spotlightId,
       );
       setSpotlight(responseDataForSpotlight);
 
       const responseDataForDisplays: DisplayRow[] =
-        await fetchDisplayfromSpotlight(params.spotlightId);
+        await fetchDisplayfromSpotlight(spotlightId);
       setDisplays(responseDataForDisplays);
 
       const responseDataForRelatedSpotlights: TourRow[] =
-        await fetchRelatedSpotlightsfromSpotlightId(params.spotlightId);
+        await fetchRelatedSpotlightsfromSpotlightId(spotlightId);
       setRelatedSpotlights(responseDataForRelatedSpotlights);
     }
 
     // Get tour media
     const getTourMedia = async () => {
-      const fetchedTourMedia = await fetchTourMedia(params.spotlightId);
+      const fetchedTourMedia = await fetchTourMedia(spotlightId);
       setTourMedia(fetchedTourMedia);
     };
 
@@ -81,7 +83,7 @@ export default function Page({ params }: { params: { spotlightId: string } }) {
     getTourMedia();
     getMedia();
     getAllTourMedia();
-  }, [params.spotlightId]);
+  }, [spotlightId]);
 
   useEffect(() => {
     if (window) {

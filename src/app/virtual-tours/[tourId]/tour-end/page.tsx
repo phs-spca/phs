@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, use } from 'react';
 
 import NavBar from '../../../../components/userComponents/NavBar/NavBar';
 import { TourRow, TourDisplaysRow } from '../../../../types/types';
@@ -12,40 +12,38 @@ import ButtonWithText from '../../../../components/userComponents/ButtonWithText
 import RelatedLinks from '../../../../components/userComponents/RelatedLinks/RelatedLinks';
 import Footer from '../../../../components/userComponents/Footer/Footer';
 
-/**
- * @param params -
- * @param params.params -
- * @param params.params.tourId - The tour ID
- * @returns The tour end page
- */
-export default function TourEndPage({
-  params,
-}: {
-  params: { tourId: string };
+type Params = Promise<{ tourId: string }>
+
+
+export default function TourEndPage(props: {
+  params: Params
 }) {
+  const params = use(props.params);
+  const tourId = params.tourId;
+
   const [tour, setTour] = useState<TourRow>();
   const [backLink, setBackLink] = useState<string>(
-    `/virtual-tours/${params.tourId}`,
+    `/virtual-tours/${tourId}`,
   );
   const [isWide, setIsWide] = useState(false);
 
   useEffect(() => {
     // Fetch tour and back link data
     const fetchData = async () => {
-      const fetchedTour = await fetchTour(params.tourId);
+      const fetchedTour = await fetchTour(tourId);
       setTour(fetchedTour);
       const tourDisplays: TourDisplaysRow[] = await fetchTourDisplays(
-        params.tourId,
+        tourId,
       );
       setBackLink(
-        `/virtual-tours/${params.tourId}/${
+        `/virtual-tours/${tourId}/${
           tourDisplays[tourDisplays.length - 1].display_id
         }`,
       );
     };
 
     fetchData();
-  }, [params.tourId]);
+  }, [tourId]);
 
   useEffect(() => {
     if (window) {

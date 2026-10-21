@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, use } from 'react';
 
 import { DisplayRow, MediaRow, TourRow } from '../../../../types/types';
 import NavBar from '../../../../components/userComponents/NavBar/NavBar';
@@ -15,18 +15,16 @@ import SpotlightDisplayButton from '../../../../components/userComponents/Spotli
 import TextButton from '../../../../components/userComponents/TextButton/TextButton';
 import Footer from '../../../../components/userComponents/Footer/Footer';
 
-/**
- * @param root0 -
- * @param root0.params -
- * @param root0.params.displayId - The display ID
- * @param root0.params.spotlightId - The spotlight ID
- * @returns display page
- */
-export default function Page({
-  params,
-}: {
-  params: { displayId: string; spotlightId: string };
+type Params = Promise<{ displayId: string; spotlightId: string }>;
+
+
+export default function Page(props: {
+  params: Params
 }) {
+  const params = use(props.params);
+  const displayId = params.displayId;
+  const spotlightId = params.spotlightId;
+
   const [display, setDisplay] = useState<DisplayRow>();
   const [otherDisplays, setOtherDisplays] = useState<DisplayRow[]>([]);
   const [media, setMedia] = useState<MediaRow[]>([]);
@@ -39,33 +37,33 @@ export default function Page({
      */
     async function fetchData() {
       const currentDisplayData: DisplayRow = await fetchDisplayFromId(
-        params.displayId,
+        displayId,
       );
       setDisplay(currentDisplayData);
 
       const displaysFromSpotlight: DisplayRow[] =
-        await fetchDisplayfromSpotlight(params.spotlightId);
-      const currentDisplayId = params.displayId;
+        await fetchDisplayfromSpotlight(spotlightId);
+      const currentDisplayId = displayId;
       const responseDataOtherDisplays = displaysFromSpotlight.filter(
         aDisplay => aDisplay.id !== currentDisplayId,
       );
 
       setOtherDisplays(responseDataOtherDisplays);
       const responseDataForSpotlight: TourRow = await fetchTour(
-        params.spotlightId,
+        spotlightId,
       );
       setSpotlight(responseDataForSpotlight);
     }
 
     // Fetch the display media
     const fetchDisplayMedia = async () => {
-      const displayMedia = await fetchImagesForDisplay(params.displayId);
+      const displayMedia = await fetchImagesForDisplay(displayId);
       setMedia(displayMedia || []);
     };
 
     fetchData();
     fetchDisplayMedia();
-  }, [params.displayId, params.spotlightId]);
+  }, [displayId, spotlightId]);
 
   useEffect(() => {
     if (window) {
@@ -102,7 +100,7 @@ export default function Page({
                   {otherDisplays.map(otherDisplay => (
                     <Link
                       key={otherDisplay.id}
-                      href={`/wildlife-spotlights/${params.spotlightId}/${otherDisplay.id}?spotlightId=${params.spotlightId}`}
+                      href={`/wildlife-spotlights/${spotlightId}/${otherDisplay.id}?spotlightId=${spotlightId}`}
                     >
                       <div className="w-[20.875rem] h-[4.625rem]">
                         <SpotlightDisplayButton text={otherDisplay.title} />
@@ -124,7 +122,7 @@ export default function Page({
     <div className="bg-ivory w-full min-h-screen">
       <NavBar />
       <Link
-        href={`/wildlife-spotlights/${params.spotlightId}`}
+        href={`/wildlife-spotlights/${spotlightId}`}
         className="absolute top-[5.25rem] left-[1.12rem] z-10"
       >
         <BackButton />
@@ -149,7 +147,7 @@ export default function Page({
               {otherDisplays.map(otherDisplay => (
                 <Link
                   key={otherDisplay.id}
-                  href={`/wildlife-spotlights/${params.spotlightId}/${otherDisplay.id}?spotlightId=${params.spotlightId}`}
+                  href={`/wildlife-spotlights/${spotlightId}/${otherDisplay.id}?spotlightId=${spotlightId}`}
                 >
                   <div className="w-[22.125rem] h-[3.75rem]">
                     <SpotlightDisplayButton text={otherDisplay.title} />

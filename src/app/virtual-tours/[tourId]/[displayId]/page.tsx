@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, use } from 'react';
 
 import {
   DisplayRow,
@@ -21,27 +21,24 @@ import Carousel from '../../../../components/userComponents/ImageScroller/ImageS
 import TextButton from '../../../../components/userComponents/TextButton/TextButton';
 import Footer from '../../../../components/userComponents/Footer/Footer';
 
-/**
- * Displays a stop page for the current tour
- * @param params -
- * @param params.params -
- * @param params.params.tourId - The tour ID
- * @param params.params.displayId - The display ID
- * @returns The tour stop page
- */
-export default function TourStopPage({
-  params,
-}: {
-  params: { tourId: string; displayId: string };
+type Params = Promise<{ tourId: string; displayId: string }>;
+
+
+export default function TourStopPage(props: {
+    params: Params;
 }) {
+  const params = use(props.params);
+  const tourId = params.tourId;
+  const displayId = params.displayId;
+
   const [display, setDisplay] = useState<DisplayRow>();
   const [tour, setTour] = useState<TourRow>();
   const [currentStop, setCurrentStop] = useState<number>();
   const [media, setMedia] = useState<MediaRow[]>([]);
-  const [prev, setPrev] = useState<string>(`/virtual-tours/${params.tourId}`);
+  const [prev, setPrev] = useState<string>(`/virtual-tours/${tourId}`);
   const [prevText, setPrevText] = useState<string>('Back');
   const [next, setNext] = useState<string>(
-    `/virtual-tours/${params.tourId}/tour-end`,
+    `/virtual-tours/${tourId}/tour-end`,
   );
   const [nextText, setNextText] = useState<string>('End Tour');
   const [isWide, setIsWide] = useState(false);
@@ -49,19 +46,19 @@ export default function TourStopPage({
   useEffect(() => {
     // Get display
     const getDisplay = async () => {
-      const fetchedDisplay = await fetchDisplay(params.displayId);
+      const fetchedDisplay = await fetchDisplay(displayId);
       setDisplay(fetchedDisplay);
     };
 
     // Get tour
     const getTour = async () => {
-      const fetchedTour = await fetchTour(params.tourId);
+      const fetchedTour = await fetchTour(tourId);
       setTour(fetchedTour);
     };
 
     // Get tour displays
     const getTourDisplays = async () => {
-      const fetchedTourDisplays = await fetchTourDisplays(params.tourId);
+      const fetchedTourDisplays = await fetchTourDisplays(tourId);
       return fetchedTourDisplays;
     };
 
@@ -69,34 +66,34 @@ export default function TourStopPage({
     const getLinks = async () => {
       const tourDisplays: TourDisplaysRow[] = await getTourDisplays();
       const index = tourDisplays.findIndex(
-        tourDisplay => tourDisplay.display_id === params.displayId,
+        tourDisplay => tourDisplay.display_id === displayId,
       );
 
       if (index === -1) {
         throw new Error('Display not found in tour displays');
       } else if (index === 0) {
         setNext(
-          `/virtual-tours/${params.tourId}/${
+          `/virtual-tours/${tourId}/${
             tourDisplays[index + 1].display_id
           }`,
         );
         setNextText('Next Stop');
       } else if (index === tourDisplays.length - 1) {
         setPrev(
-          `/virtual-tours/${params.tourId}/${
+          `/virtual-tours/${tourId}/${
             tourDisplays[index - 1].display_id
           }`,
         );
         setPrevText('Last Stop');
       } else {
         setPrev(
-          `/virtual-tours/${params.tourId}/${
+          `/virtual-tours/${tourId}/${
             tourDisplays[index - 1].display_id
           }`,
         );
         setPrevText('Last Stop');
         setNext(
-          `/virtual-tours/${params.tourId}/${
+          `/virtual-tours/${tourId}/${
             tourDisplays[index + 1].display_id
           }`,
         );
@@ -111,7 +108,7 @@ export default function TourStopPage({
     async function getCurrentStop() {
       const tourDisplays: TourDisplaysRow[] = await getTourDisplays();
       const index = tourDisplays.findIndex(
-        tourDisplay => tourDisplay.display_id === params.displayId,
+        tourDisplay => tourDisplay.display_id === displayId,
       );
 
       if (index === -1) {
@@ -123,7 +120,7 @@ export default function TourStopPage({
 
     // Fetch the display media
     const fetchDisplayMedia = async () => {
-      const displayMedia = await fetchImagesForDisplay(params.displayId);
+      const displayMedia = await fetchImagesForDisplay(displayId);
       setMedia(displayMedia || []);
     };
 
@@ -132,7 +129,7 @@ export default function TourStopPage({
     getLinks();
     getCurrentStop();
     fetchDisplayMedia();
-  }, [params.displayId, params.tourId]);
+  }, [displayId, tourId]);
 
   useEffect(() => {
     if (window) {
