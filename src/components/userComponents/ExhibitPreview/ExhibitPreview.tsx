@@ -1,7 +1,7 @@
 'use client';
 
 import React, { Fragment, useState } from 'react';
-import { Dialog, Transition } from '@headlessui/react';
+import { Dialog, DialogPanel, DialogBackdrop, Transition, TransitionChild } from '@headlessui/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './ExhibitPreview.module.css';
@@ -64,7 +64,7 @@ export default function ExhibitPreview({
           onClose={closeModal}
         >
           <div className="min-h-screen px-4 text-center">
-            <Transition.Child
+            <TransitionChild
               as={Fragment}
               enter="ease-out duration-300"
               enterFrom="opacity-0"
@@ -73,8 +73,8 @@ export default function ExhibitPreview({
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Dialog.Overlay className="fixed inset-0" />
-            </Transition.Child>
+              <DialogBackdrop className="fixed inset-0" />
+            </TransitionChild>
 
             {/* This element is to trick the browser into centering the modal contents. */}
             <span
@@ -83,7 +83,7 @@ export default function ExhibitPreview({
             >
               &#8203;
             </span>
-            <Transition.Child
+            <TransitionChild
               as={Fragment}
               enter="ease-out duration-300"
               enterFrom="opacity-0 scale-95"
@@ -92,7 +92,7 @@ export default function ExhibitPreview({
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className={styles.roundedbackground}>
+              <DialogPanel className={styles.roundedbackground}>
                 <div className={styles.buttonbox}>
                   <button
                     type="button"
@@ -142,8 +142,8 @@ export default function ExhibitPreview({
                     priority
                   />
                 </div>
-              </div>
-            </Transition.Child>
+              </DialogPanel>
+            </TransitionChild>
           </div>
         </Dialog>
       </Transition>
