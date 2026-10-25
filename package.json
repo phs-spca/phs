@@ -69,10 +69,4 @@
     "*.css": "stylelint --fix",
     "*.md": "markdownlint"
   },
-  "ignore": [
-    "node_modules",
-    "dist",
-    "package-lock.json",
-    "src/app/testing/page.tsx"
-  ]
 }
