@@ -68,5 +68,5 @@
     "*.js": "eslint --cache --fix",
     "*.css": "stylelint --fix",
     "*.md": "markdownlint"
-  },
+  }
 }
