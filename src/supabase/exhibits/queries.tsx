@@ -37,7 +37,7 @@ export async function fetchExhibit(exhibitId: string): Promise<ExhibitRow> {
  * @returns A promise that resolves to a ExhibitRow object.
  */
 export async function fetchExhibitImage(
-  exhibitId: string,
+  exhibitId: number,
 ): Promise<{ image: string }> {
   const { data, error } = await supabase
     .from('categories')

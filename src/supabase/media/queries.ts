@@ -60,7 +60,7 @@ export async function fetchImagesForTour(
  * @param id of media to delete
  * @returns deletes a media row where id == media_id
  */
-export async function deleteMedia(id: number) {
+export async function deleteMedia(id: string ) {
   let { error } = await supabase.from('media').delete().eq('id', id);
   if (error) {
     throw new Error(`An error occurred trying to delete displays: ${error}`);

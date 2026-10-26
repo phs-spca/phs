@@ -6,7 +6,7 @@ import { CategoryRow } from '../../types/types';
  * @returns color for category, else null
  */
 // eslint-disable-next-line import/prefer-default-export
-export async function getCategoryColor1(id: string | number) {
+export async function getCategoryColor1(id: number) {
   try {
     const { data, error } = await supabase
       .from('categories')

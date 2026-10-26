@@ -97,7 +97,13 @@ function SiteMap({ mode }: SiteMapProps) {
           const colors = await Promise.all(
             data.map(async item => ({
               id: item.id,
-              color: await getCategoryColor1(item.id),
+              // HHT: TERRIBLE HACK! Number conversion below is so that we can
+              // typecheck and build successfully. But there are fundamental
+              // problems here. Exhibits and Tours don't have the same structure,
+              // and Tour / Exhibit IDs are UUIDs (strings) but Category IDs are
+              // numbers. Also see the hand-waiving function in the database:
+              // get_exhibit_details() which papers over this assymetry.
+              color: await getCategoryColor1( Number(item.id) ),
             })),
           );
 
