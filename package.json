@@ -9,9 +9,8 @@
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "tsc-check": "tsc --noEmit",
-    "pre-push": "npm run tsc-check && npm run lint && npm run prettier",
-    "pre-commit": "npm run update-types && (npm run tsc-check || true) && (npm run lint || true) && npm run prettier",
-    "prettier": "prettier --write .",
+    "pre-push": "npm run tsc-check && npm run lint",
+    "pre-commit": "npm run update-types && (npm run tsc-check || true) && npm run lint",
     "update-types": "npx supabase gen types typescript --project-id 'qkkuacqtcsfjbnzmxmhk' > src/types/supabase.ts"
   },
   "husky": {
